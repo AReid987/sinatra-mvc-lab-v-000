@@ -12,9 +12,10 @@ class PigLatinizer
       else
         result = word + "way"
       end
-      result
+      
       #binding.pry
     end
+    result 
 
   end
 

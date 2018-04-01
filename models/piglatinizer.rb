@@ -8,7 +8,7 @@ class PigLatinizer
       word_arr = word.scan(/\w/)
       if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0
         c_str = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).first
-        word_str = word.split(c_str).last
+        word_str = word.sub!(c_str, "")
         result << word_str + c_str + "ay"
       else
         result << word + "way"

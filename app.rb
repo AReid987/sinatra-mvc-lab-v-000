@@ -8,6 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    binding.pry 
+    @words = PigLatinizer.new
+    binding.pry
   end
 end

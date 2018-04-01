@@ -6,6 +6,7 @@ class PigLatinizer
       result = text[1..-1] + text[0] + "ay"
     end
     binding.pry
+    result
   end
 
 end

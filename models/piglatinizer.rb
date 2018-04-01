@@ -2,7 +2,7 @@ class PigLatinizer
 
   def piglatinize(text)
     text_arr = text.split(" ")
-
+    result = ""
     text_arr.each do |word|
       word_arr = word.scan(/\w/)
       if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0

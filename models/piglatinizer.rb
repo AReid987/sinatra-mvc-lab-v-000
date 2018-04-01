@@ -12,6 +12,7 @@ class PigLatinizer
       else
         result = word + "way"
       end
+      result 
     end
 
   end

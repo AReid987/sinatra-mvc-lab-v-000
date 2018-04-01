@@ -8,9 +8,9 @@ class PigLatinizer
       if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0
         c_arr = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/)
         v_arr = word.downcase.scan(/[aeoui]/)
-        (v_arr.first + c_arr.last + c_arr.first + "ay").flatten
+        (v_arr.first + c_arr.last + c_arr.first + "ay")
       else
-        (word + "way").flatten 
+        (word + "way")
       end
     end
 

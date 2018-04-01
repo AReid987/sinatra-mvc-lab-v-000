@@ -16,7 +16,7 @@ class PigLatinizer
 
 
     end
-    result.join(', ')
+    result.join(' ')
     #binding.pry
   end
 

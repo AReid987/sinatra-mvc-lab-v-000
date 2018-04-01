@@ -14,9 +14,9 @@ class PigLatinizer
         result << word + "way"
       end
 
-      
+
     end
-    result.flatten 
+    result.flatten
     binding.pry
   end
 

@@ -5,8 +5,9 @@ class PigLatinizer
 
     text_arr.collect do |word|
       c_arr = word.scan(/[bcdfghjklmnpqrstvwxyz]+/)
+      binding.pry
     end
-    binding.pry
+    
   end
 
 end

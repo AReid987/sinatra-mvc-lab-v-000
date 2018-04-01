@@ -4,13 +4,14 @@ class PigLatinizer
     text_arr = text.split(" ")
 
     text_arr.collect do |word|
-
-      c_arr = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/)
-      v_arr = word.downcase.scan(/[aeoui]/)
-      v_arr.first + c_arr.last + c_arr.first + "ay"
-
+      word_arr = word.scan(/\w/)
+      if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0
+        c_arr = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/)
+        v_arr = word.downcase.scan(/[aeoui]/)
+        v_arr.first + c_arr.last + c_arr.first + "ay"
+      end
     end
-    
+
   end
 
 end

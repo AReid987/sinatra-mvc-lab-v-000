@@ -7,7 +7,7 @@ class App < Sinatra::Base
     erb :user_input
   end
 
-  get '/piglatinize' do 
+  get '/piglatinize' do
     
   end
 end

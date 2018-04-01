@@ -10,7 +10,7 @@ class PigLatinizer
       v_arr.first + c_arr.last + c_arr.first + "ay"
 
     end
-    binding.pry 
+    
   end
 
 end

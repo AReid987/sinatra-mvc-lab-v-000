@@ -16,7 +16,7 @@ class PigLatinizer
 
       #binding.pry
     end
-    result
+    result.flatten 
 
   end
 

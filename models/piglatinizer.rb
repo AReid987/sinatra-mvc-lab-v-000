@@ -2,6 +2,10 @@ class PigLatinizer
 
   def piglatinize(text)
     text_arr = text.split(", ")
+    
+    text_arr.collect do |word|
+      c_arr = word.scan(/[bcdfghjklmnpqrstvwxyz]+/)
+    end
     binding.pry
   end
 

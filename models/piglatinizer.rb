@@ -9,7 +9,7 @@ class PigLatinizer
         result = text + "way"
       end
     end
-    #binding.pry
+    binding.pry
     result
   end
 

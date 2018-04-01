@@ -12,7 +12,7 @@ class App < Sinatra::Base
     @piglatinized = words.piglatinize(params[:user_phrase])
 
     erb :piglatinize
-    binding.pry
+    #binding.pry
   end
 
 end

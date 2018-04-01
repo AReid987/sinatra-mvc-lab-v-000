@@ -7,7 +7,7 @@ class PigLatinizer
       c_arr = word.scan(/[bcdfghjklmnpqrstvwxyz]+/)
       binding.pry
     end
-    
+
   end
 
 end

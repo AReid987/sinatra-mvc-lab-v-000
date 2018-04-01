@@ -10,6 +10,7 @@ class PigLatinizer
         word_str = word.tr(c_str, '')
         #v_arr = word.downcase.scan(/[aeoui]/)
         result << word_str + c_str + "ay"
+        binding.pry
       else
         result << word + "way"
       end

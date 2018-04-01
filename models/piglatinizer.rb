@@ -6,7 +6,7 @@ class PigLatinizer
       if text[0].scan(/[bcdfghjklmnpqrstvwxyz]/).size > 0
         result = text[1..-1] + text[0] + "ay"
       elsif text[0].scan(/[aeoui]/).size > 0
-        result = text[1..-1] + text[0] + "way"
+        result = text + "way"
       end
     end
     binding.pry

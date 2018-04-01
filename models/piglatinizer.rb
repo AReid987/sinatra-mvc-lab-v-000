@@ -9,15 +9,11 @@ class PigLatinizer
         c_str = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).first
         word_str = word.split(c_str).last
         result << word_str + c_str + "ay"
-        #binding.pry
       else
         result << word + "way"
       end
-
-
     end
     result.join(' ')
-    #binding.pry
   end
 
 end

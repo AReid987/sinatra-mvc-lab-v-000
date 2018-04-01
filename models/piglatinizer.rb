@@ -6,8 +6,8 @@ class PigLatinizer
     text_arr.each do |word|
 
       word_arr = word.scan(/\w/)
-      if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0
-        c_str = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).first
+      if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]+/).size > 0
+        c_str = word.downcase.scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]+/).first
         word_str = word.sub!(c_str, "")
         result << word_str + c_str + "ay"
       else

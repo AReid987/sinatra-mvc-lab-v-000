@@ -7,7 +7,7 @@ class PigLatinizer
       word_arr = word.scan(/\w/)
       if word_arr.first.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).size > 0
         c_str = word.downcase.scan(/[bcdfghjklmnpqrstvwxyz]+/).first
-        word_str = word.tr(c_arr.first, '')
+        word_str = word.tr(c_str, '')
         #v_arr = word.downcase.scan(/[aeoui]/)
         result = word_str + c_str + "ay"
       else
